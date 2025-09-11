@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GMTI Energy Limited - Company Profile</title>
-    <link rel="icon" type="image/png" href="c:\Users\Admin\Downloads\Screenshot 2025-09-01 at 13-37-30 Board of Directors-1.pdf.png">
+    <title>Monas Petroleum Marketing Nigeria Limited - Company Profile</title>
     <style>
         * {
             margin: 0;
@@ -14,678 +13,688 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
             color: #333;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            min-height: 100vh;
+            overflow-x: hidden;
         }
 
         .presentation-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-        }
-
-        .slide {
             background: white;
-            border-radius: 15px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-            animation: slideIn 0.6s ease-out;
-            position: relative;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 8px;
             overflow: hidden;
         }
 
-        .slide::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, #ff6b35, #f7931e, #ffd700);
+        .slide {
+            min-height: 100vh;
+            padding: 60px 40px;
+            display: none;
+            position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
         }
 
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .slide.active {
+            display: block;
+        }
+
+        .slide-1 {
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 50%, #1a202c 100%);
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-section {
+            margin-bottom: 40px;
+        }
+
+        /* More authentic logo design based on the PDF */
+        .company-logo {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 30px;
+            position: relative;
+        }
+
+        .flame-shape {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background: linear-gradient(45deg, #9b2c2c 0%, #d69e2e 50%, #718096 100%);
+            border-radius: 70px 70px 70px 10px;
+            transform: rotate(-25deg);
+            box-shadow: 0 10px 30px rgba(155, 44, 44, 0.3);
+        }
+
+        .flame-inner {
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            width: 70%;
+            height: 70%;
+            background: linear-gradient(45deg, #c53030 0%, #ed8936 50%, #a0aec0 100%);
+            border-radius: 50px 50px 50px 8px;
+        }
+
+        .flame-core {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+            background: linear-gradient(45deg, #e53e3e 0%, #f6ad55 50%, #cbd5e0 100%);
+            border-radius: 30px 30px 30px 5px;
+        }
+
+        .company-title {
+            font-size: 3.2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .company-motto {
+            font-size: 1.6em;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: #d69e2e;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            font-weight: 300;
+        }
+
+        .company-reg {
+            font-size: 1.1em;
+            opacity: 0.9;
+            font-weight: 300;
         }
 
         .slide h1 {
-            color: #1e3c72;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            color: white;
+            font-size: 2.6em;
+            margin-bottom: 40px;
             text-align: center;
-            font-weight: 700;
+            position: relative;
+            font-weight: 600;
+        }
+
+        .slide h1::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, #9b2c2c, #d69e2e);
+            border-radius: 2px;
         }
 
         .slide h2 {
-            color: #2a5298;
-            font-size: 2rem;
+            color: #2d3748;
+            font-size: 2em;
             margin-bottom: 25px;
-            text-align: center;
+            border-left: 4px solid #9b2c2c;
+            padding-left: 20px;
             font-weight: 600;
         }
 
-        .slide h3 {
-            color: #ff6b35;
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            font-weight: 600;
-            border-left: 4px solid #ff6b35;
-            padding-left: 15px;
-        }
-
-        .company-logo {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .logo-circle {
-            width: 120px;
-            height: 120px;
-            background: linear-gradient(135deg, #ff6b35, #f7931e);
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
-        }
-
-        .company-info {
-            text-align: center;
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
-
-        .info-grid {
+        .content-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
         }
 
-        .info-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        .content-box {
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            border-left: 4px solid #9b2c2c;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 1px solid #e2e8f0;
         }
 
-        .info-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        .content-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
         }
 
-        .info-card .icon {
-            font-size: 2.5rem;
-            color: #ff6b35;
-            margin-bottom: 10px;
+        .service-item {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+            padding: 28px;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-size: 1.2em;
+            font-weight: 500;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(26, 54, 93, 0.25);
+            transition: all 0.3s ease;
+            border: 1px solid #2c5282;
         }
 
-        .leadership-grid {
+        .service-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(26, 54, 93, 0.35);
+            background: linear-gradient(135deg, #2c5282 0%, #3182ce 100%);
+        }
+
+        .market-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .market-list li {
+            background: linear-gradient(90deg, #f7fafc 0%, #ffffff 100%);
+            margin: 12px 0;
+            padding: 20px;
+            border-left: 3px solid #d69e2e;
+            border-radius: 6px;
+            font-size: 1.1em;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+            transition: all 0.3s ease;
+            border-top: 1px solid #e2e8f0;
+            color: #2d3748;
+        }
+
+        .market-list li:hover {
+            border-left-color: #9b2c2c;
+            transform: translateX(8px);
+            background: linear-gradient(90deg, #edf2f7 0%, #f7fafc 100%);
+        }
+
+        .advantage-item {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            color: white;
+            padding: 28px;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-size: 1.1em;
+            box-shadow: 0 6px 20px rgba(45, 55, 72, 0.25);
+            transition: all 0.3s ease;
+            border: 1px solid #4a5568;
+        }
+
+        .advantage-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(45, 55, 72, 0.35);
+            background: linear-gradient(135deg, #4a5568 0%, #718096 100%);
+        }
+
+        .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 25px;
+            gap: 30px;
+            margin-top: 40px;
         }
 
-        .leader-card {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            border: 2px solid #e9ecef;
-            transition: all 0.3s ease;
-        }
-
-        .leader-card:hover {
-            border-color: #ff6b35;
-            transform: translateY(-3px);
-        }
-
-        .leader-name {
-            color: #1e3c72;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .leader-position {
-            color: #ff6b35;
-            font-weight: 500;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-        }
-
-        .leader-experience {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        .highlight-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin: 25px 0;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, #ff6b35, #f7931e);
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 25px;
-        }
-
-        .service-card {
-            background: white;
-            border: 2px solid #f0f0f0;
-            padding: 25px;
-            border-radius: 10px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover {
-            border-color: #ff6b35;
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.1);
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            color: #ff6b35;
-            margin-bottom: 15px;
-        }
-
-        .clients-section {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 25px;
-            border-radius: 12px;
-            margin-top: 20px;
-        }
-
-        .client-logos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .client-logo {
-            background: white;
-            padding: 15px 25px;
+        .team-member {
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            padding: 35px;
             border-radius: 8px;
-            font-weight: 600;
-            color: #2a5298;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            border-top: 4px solid #9b2c2c;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
         }
 
-        .contact-info {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin-top: 25px;
+        .team-member:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+        }
+
+        .team-role {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #9b2c2c;
+            margin-bottom: 12px;
+        }
+
+        .team-name {
+            font-size: 1.1em;
+            color: #2d3748;
+            font-weight: 500;
         }
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border: 1px solid #2c5282;
         }
 
         .contact-item {
+            margin: 18px 0;
+            font-size: 1.05em;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            line-height: 1.5;
         }
 
         .contact-icon {
-            font-size: 1.5rem;
-            color: #ffd700;
-        }
-
-        .why-choose-us {
-            background: linear-gradient(135deg, rgba(255, 107, 53, 0.05), rgba(247, 147, 30, 0.05));
-            padding: 30px;
-            border-radius: 12px;
-            margin-top: 25px;
-        }
-
-        .advantage-list {
-            margin-top: 20px;
-        }
-
-        .advantage-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 15px;
-            margin-bottom: 20px;
-            padding: 15px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        .advantage-icon {
-            color: #ff6b35;
-            font-size: 1.5rem;
+            width: 24px;
+            height: 24px;
+            background: #9b2c2c;
+            border-radius: 4px;
+            margin-right: 15px;
             margin-top: 2px;
-        }
-
-        .slide-number {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            background: rgba(255, 107, 53, 0.1);
-            color: #ff6b35;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .cta-section {
-            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-            margin-top: 25px;
+            font-weight: 500;
+            font-size: 0.9em;
+            flex-shrink: 0;
         }
 
-        .cta-button {
-            background: white;
-            color: #ff6b35;
-            padding: 15px 30px;
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, #9b2c2c 0%, #c53030 100%);
+            color: white;
             border: none;
-            border-radius: 25px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 20px;
+            padding: 14px 28px;
+            border-radius: 6px;
             cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(155, 44, 44, 0.25);
             transition: all 0.3s ease;
+            border: 1px solid #c53030;
         }
 
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        .nav-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(155, 44, 44, 0.35);
+            background: linear-gradient(135deg, #c53030 0%, #e53e3e 100%);
+        }
+
+        .slide-indicator {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: rgba(26, 54, 93, 0.95);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 500;
+            z-index: 1000;
+            border: 1px solid #2c5282;
+            font-size: 0.95em;
+        }
+
+        .overview-text {
+            font-size: 1.2em;
+            line-height: 1.7;
+            text-align: justify;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f7fafc 0%, #ffffff 100%);
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            border-left: 4px solid #d69e2e;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .mission-vision-values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .mvv-box {
+            padding: 35px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .mvv-box:hover {
+            transform: translateY(-3px);
+        }
+
+        .mission-box {
+            background: linear-gradient(135deg, #2f855a 0%, #38a169 100%);
+            color: white;
+        }
+
+        .vision-box {
+            background: linear-gradient(135deg, #d69e2e 0%, #ed8936 100%);
+            color: white;
+        }
+
+        .values-box {
+            background: linear-gradient(135deg, #3182ce 0%, #4299e1 100%);
+            color: white;
+        }
+
+        .mvv-title {
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .mvv-content {
+            font-size: 1.1em;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        /* Professional styling for service descriptions */
+        .services-intro {
+            background: linear-gradient(135f, #f7fafc 0%, #ffffff 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #d69e2e;
+            color: #2d3748;
+            font-size: 1.1em;
+            line-height: 1.6;
+            border-top: 1px solid #e2e8f0;
         }
 
         @media (max-width: 768px) {
             .slide {
-                padding: 25px;
+                padding: 30px 20px;
             }
-           
-            .slide h1 {
-                font-size: 2rem;
+            
+            .company-title {
+                font-size: 2.2em;
             }
-           
-            .slide h2 {
-                font-size: 1.5rem;
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
-           
-            .stat-number {
-                font-size: 2rem;
+            
+            .navigation {
+                bottom: 20px;
             }
+            
+            .nav-btn {
+                padding: 12px 20px;
+                font-size: 0.95em;
+            }
+
+            .company-logo {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        /* Professional accents */
+        .highlight-text {
+            color: #9b2c2c;
+            font-weight: 600;
+        }
+
+        .secondary-text {
+            color: #718096;
+            font-weight: 400;
         }
     </style>
 </head>
 <body>
     <div class="presentation-container">
-       
-        <!-- Slide 1: Title Slide -->
-        <div class="slide">
-            <div class="slide-number">01</div>
-            <div class="company-logo">
-                <div class="logo-circle">GMTI</div>
-            </div>
-            <h1>GMTI ENERGY LIMITED</h1>
-            <div class="company-info">
-                <p style="font-size: 1.3rem; color: #2a5298; font-weight: 600; margin-bottom: 15px;">Your Trusted Partner in Petroleum Products Distribution</p>
-                <p style="font-size: 1rem; color: #666;">Comprehensive downstream oil & gas solutions across Nigeria</p>
-                <div class="info-grid">
-                    <div class="info-card">
-                        <div class="icon">📅</div>
-                        <strong>Established</strong><br>2019
-                    </div>
-                    <div class="info-card">
-                        <div class="icon">📍</div>
-                        <strong>Location</strong><br>Calabar, Nigeria
-                    </div>
-                    <div class="info-card">
-                        <div class="icon">🏢</div>
-                        <strong>Registration</strong><br>RC: 1566443
+        <div class="slide-indicator">
+            Slide <span id="currentSlide">1</span> of <span id="totalSlides">8</span>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide slide-1 active">
+            <div class="logo-section">
+                <div class="company-logo">
+                    <div class="flame-shape">
+                        <div class="flame-red"></div>
+                        <div class="flame-orange"></div>
+                        <div class="flame-gray"></div>
                     </div>
                 </div>
+            </div>
+            <h1 class="company-title">MONAS PETROLEUM MARKETING NIGERIA LIMITED</h1>
+            <p class="company-motto">"WHERE WISDOM FUELS ENERGY"</p>
+            <p class="company-reg">RC: 1959335</p>
+            <div style="margin-top: 40px; font-size: 1.3em; font-weight: 400; color: #4a5568;">
+                <p>Fueling Efficiency, Delivering Excellence</p>
             </div>
         </div>
 
         <!-- Slide 2: Company Overview -->
         <div class="slide">
-            <div class="slide-number">02</div>
-            <h2>Company Overview</h2>
-            <h3>Market Position & Expertise</h3>
-            <p style="font-size: 1.1rem; margin-bottom: 25px; color: #555;">GMTI Energy Limited stands as a prominent player in Nigeria's downstream petroleum sector, offering comprehensive distribution solutions with a proven track record of reliability and growth. Our strategic positioning and operational excellence make us the ideal partner for expanding market reach.</p>
-           
-            <div class="highlight-stats">
-                <div class="stat-card">
-                    <div class="stat-number">6+</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">5</div>
-                    <div class="stat-label">Retail Stations</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Affiliate Partners</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">20+</div>
-                    <div class="stat-label">Industrial Clients</div>
-                </div>
+            <h1>Company Overview</h1>
+            <div class="overview-text">
+                Monas Petroleum Marketing Nigeria Limited is a dynamic and fast-growing player in Nigeria's downstream oil and gas sector. We specialize in the marketing and distribution of refined petroleum products including Premium Motor Spirit (PMS), Automotive Gas Oil (AGO), Dual Purpose Kerosene (DPK), and Liquefied Petroleum Gas (LPG). With a strong focus on efficiency, safety, and customer satisfaction, Monas Petroleum is committed to powering communities, industries, and economic growth across Nigeria through wisdom-driven energy solutions that deliver measurable value to our partners and stakeholders.
             </div>
-           
-            <div class="why-choose-us">
-                <h3>Core Competencies</h3>
-                <div class="advantage-list">
-                    <div class="advantage-item">
-                        <div class="advantage-icon">⚡</div>
-                        <div>
-                            <strong>Downstream Specialization:</strong> Focused expertise in petroleum products distribution with deep market knowledge and operational efficiency.
-                        </div>
+        </div>
+
+        <!-- Slide 3: Mission, Vision, Values -->
+        <div class="slide">
+            <h1>Our Foundation</h1>
+            <div class="mission-vision-values">
+                <div class="mvv-box mission-box">
+                    <div class="mvv-title">MISSION</div>
+                    <div class="mvv-content">
+                        To deliver high-quality petroleum products and services through strategic partnerships, operational excellence, and integrity-driven leadership.
                     </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🌍</div>
-                        <div>
-                            <strong>Strategic Coverage:</strong> Nationwide distribution network with established infrastructure and logistics capabilities.
-                        </div>
+                </div>
+                <div class="mvv-box vision-box">
+                    <div class="mvv-title">VISION</div>
+                    <div class="mvv-content">
+                        To become a leading, innovative, and customer-centric petroleum marketing company in Africa.
                     </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🤝</div>
-                        <div>
-                            <strong>B2B Excellence:</strong> Proven track record serving major industrial clients with complex supply chain requirements.
-                        </div>
+                </div>
+                <div class="mvv-box values-box">
+                    <div class="mvv-title">VALUES</div>
+                    <div class="mvv-content">
+                        Integrity • Safety • Excellence • Innovation • Customer Focus
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 3: Leadership Team -->
+        <!-- Slide 4: Our Services -->
         <div class="slide">
-            <div class="slide-number">03</div>
-            <h2>Executive Leadership Team</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 25px; font-size: 1.1rem;">Experienced professionals driving growth and operational excellence</p>
-           
-            <div class="leadership-grid">
-                <div class="leader-card">
-                    <div class="leader-name">Mr. Adeniyi Ige</div>
-                    <div class="leader-position">Chief Executive Officer</div>
-                    <div class="leader-experience">Over 15 years of experience in petroleum products distribution. Founder and visionary leader with deep industry knowledge and strategic partnerships. Holds 50% ownership stake, ensuring committed leadership.</div>
+            <h1>Our Services</h1>
+            <div class="services-intro">
+                <strong class="highlight-text">Comprehensive Energy Solutions:</strong> Premium Motor Spirit (PMS) • Automotive Gas Oil (AGO) • Dual Purpose Kerosene (DPK) • Liquefied Petroleum Gas (LPG)
+            </div>
+            <div class="content-grid">
+                <div>
+                    <div class="service-item">Bulk Fuel Supply</div>
+                    <div class="service-item">Retail Sales Operations</div>
                 </div>
-               
-                <div class="leader-card">
-                    <div class="leader-name">Mr. Taiwo Lawal</div>
-                    <div class="leader-position">Chief Operating Officer</div>
-                    <div class="leader-experience">12 years of specialized experience in downstream oil & gas operations. Expert in supply chain management, logistics optimization, and operational efficiency. 15% equity stakeholder.</div>
-                </div>
-               
-                <div class="leader-card">
-                    <div class="leader-name">Mrs. Funmi Ige</div>
-                    <div class="leader-position">Chief Financial Officer</div>
-                    <div class="leader-experience">Seasoned finance professional with comprehensive background in business management and financial strategy. Ensures robust financial controls and strategic growth planning. 35% ownership.</div>
-                </div>
-               
-                <div class="leader-card">
-                    <div class="leader-name">Mrs. Adesope Adetoye</div>
-                    <div class="leader-position">Chief Legal/Compliance Officer</div>
-                    <div class="leader-experience">Corporate governance and compliance specialist ensuring regulatory adherence, risk management, and legal framework optimization for sustainable growth.</div>
+                <div>
+                    <div class="service-item">Logistics & Distribution</div>
+                    <div class="service-item">Storage Solutions</div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 4: Products & Services -->
+        <!-- Slide 5: Key Markets Served -->
         <div class="slide">
-            <div class="slide-number">04</div>
-            <h2>Product Portfolio & Services</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 25px; font-size: 1.1rem;">Comprehensive petroleum products distribution across multiple market segments</p>
-           
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">⛽</div>
-                    <h4 style="color: #1e3c72; margin-bottom: 10px;">Premium Motor Spirit (PMS)</h4>
-                    <p>High-quality gasoline distribution to retail and commercial customers</p>
+            <h1>Key Markets Served</h1>
+            <div class="content-grid">
+                <div>
+                    <h2>Our Client Portfolio</h2>
+                    <ul class="market-list">
+                        <li>Industrial Clients (Construction, Manufacturing, Mining)</li>
+                        <li>Transportation and Logistics Companies</li>
+                        <li>Agricultural Sector Operations</li>
+                        <li>Government Agencies and Parastatals</li>
+                        <li>General Public via Retail Network</li>
+                    </ul>
                 </div>
-               
-                <div class="service-card">
-                    <div class="service-icon">🚛</div>
-                    <h4 style="color: #1e3c72; margin-bottom: 10px;">Automotive Gas Oil (AGO)</h4>
-                    <p>Diesel fuel supply for transportation and industrial applications</p>
-                </div>
-               
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h4 style="color: #1e3c72; margin-bottom: 10px;">Lubricants</h4>
-                    <p>Industrial and automotive lubricants for various applications</p>
-                </div>
-               
-                <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h4 style="color: #1e3c72; margin-bottom: 10px;">Liquefied Petroleum Gas (LPG)</h4>
-                    <p>Clean cooking gas solutions for residential and commercial use</p>
-                </div>
-            </div>
-           
-            <div class="why-choose-us">
-                <h3>Distribution Channels</h3>
-                <div class="advantage-list">
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🏪</div>
-                        <div>
-                            <strong>Retail Network:</strong> 5 strategically located filling stations across Nigeria providing direct consumer access.
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🤝</div>
-                        <div>
-                            <strong>Affiliate Partnership:</strong> Robust network of 15+ affiliate partners extending market reach and distribution capacity.
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🏭</div>
-                        <div>
-                            <strong>Industrial Supply:</strong> Direct supply to major industrial customers requiring bulk quantities and specialized logistics.
-                        </div>
+                <div>
+                    <div class="content-box">
+                        <h3 style="color: #9b2c2c; margin-bottom: 20px; font-size: 1.5em; font-weight: 600;">The Monas Advantage</h3>
+                        <p style="font-size: 1.1em; line-height: 1.6; color: #2d3748;">
+                            Our wisdom-driven approach ensures that every client receives tailored energy solutions that maximize operational efficiency while maintaining the highest safety and quality standards. We understand that reliable energy supply is fundamental to business success, and we are committed to fueling sustainable growth across all sectors of the Nigerian economy.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 5: Key Clients -->
+        <!-- Slide 6: Strategic Advantages -->
         <div class="slide">
-            <div class="slide-number">05</div>
-            <h2>Strategic Client Portfolio</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 25px; font-size: 1.1rem;">Trusted by leading industrial organizations across Nigeria</p>
-           
-            <div class="clients-section">
-                <h3 style="text-align: center; margin-bottom: 20px;">Major Industrial Clients</h3>
-                <div class="client-logos">
-                    <div class="client-logo">Ardagh Group</div>
-                    <div class="client-logo">7 Energy</div>
-                    <div class="client-logo">Savannah Energy</div>
-                    <div class="client-logo">International Glass Industries</div>
+            <h1>Strategic Advantages</h1>
+            <div style="margin-top: 40px;">
+                <div class="advantage-item">
+                    <strong>Comprehensive Network:</strong> Extensive fuel stations and distribution points strategically located across Nigeria
                 </div>
-            </div>
-           
-            <div class="why-choose-us">
-                <h3>Client Success Factors</h3>
-                <div class="advantage-list">
-                    <div class="advantage-item">
-                        <div class="advantage-icon">📈</div>
-                        <div>
-                            <strong>Proven Track Record:</strong> Successfully serving multinational corporations with complex supply requirements and stringent quality standards.
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🚚</div>
-                        <div>
-                            <strong>Reliable Supply Chain:</strong> Consistent delivery performance with robust logistics infrastructure ensuring uninterrupted supply.
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">💼</div>
-                        <div>
-                            <strong>Flexible Solutions:</strong> Customized supply agreements and delivery schedules tailored to specific industrial requirements.
-                        </div>
-                    </div>
+                <div class="advantage-item">
+                    <strong>Strategic Partnerships:</strong> Established relationships with major depots and reliable supply chain partners
+                </div>
+                <div class="advantage-item">
+                    <strong>Modern Fleet Operations:</strong> State-of-the-art delivery vehicles ensuring timely, safe, and efficient distribution
+                </div>
+                <div class="advantage-item">
+                    <strong>Expert Leadership:</strong> Experienced management team with deep industry knowledge and operational expertise
+                </div>
+                <div class="advantage-item">
+                    <strong>Quality Assurance:</strong> Unwavering commitment to international standards and regulatory compliance
                 </div>
             </div>
         </div>
 
-        <!-- Slide 6: Why Choose GMTI -->
+        <!-- Slide 7: Leadership Team -->
         <div class="slide">
-            <div class="slide-number">06</div>
-            <h2>Why Partner with GMTI Energy?</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 25px; font-size: 1.1rem;">Compelling advantages for refining companies seeking reliable distribution partners</p>
-           
-            <div class="why-choose-us">
-                <div class="advantage-list">
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🎯</div>
-                        <div>
-                            <strong>Market Penetration:</strong> Established presence across Nigeria with proven ability to reach both retail and industrial segments effectively.
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">⚡</div>
-                        <div>
-                            <strong>Operational Excellence:</strong> Experienced leadership team with combined 25+ years in downstream operations ensuring efficient distribution.
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🏗️</div>
-                        <div>
-                            <strong>Infrastructure Capacity:</strong> Existing retail infrastructure and established affiliate network ready for volume expansion.
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">📊</div>
-                        <div>
-                            <strong>Financial Stability:</strong> Strong ownership structure with committed stakeholders and professional financial management.
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">⚖️</div>
-                        <div>
-                            <strong>Compliance Excellence:</strong> Dedicated legal and compliance framework ensuring regulatory adherence and risk mitigation.
-                        </div>
-                    </div>
-                    <div class="advantage-item">
-                        <div class="advantage-icon">🔄</div>
-                        <div>
-                            <strong>Growth Potential:</strong> Scalable operations with demonstrated ability to expand distribution network and serve larger volumes.
-                        </div>
-                    </div>
+            <h1>Leadership Team</h1>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-role">Managing Director/CEO</div>
+                    <div class="team-name">Mr. Muhammed Anesu Suleman</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-role">Chief Financial Officer</div>
+                    <div class="team-name">Mrs. Suleman Muhammed Aisha</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-role">Chief Legal & Compliance Officer</div>
+                    <div class="team-name">Nasiru Usman Agahu Esq. Mclrj.</div>
+                </div>
+                <div class="team-member">
+                    <div class="team-role">Chief Operating Officer</div>
+                    <div class="team-name">Mr. Kabiru Shielu</div>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 7: Contact & Next Steps -->
+        <!-- Slide 8: Contact Information -->
         <div class="slide">
-            <div class="slide-number">07</div>
-            <h2>Let's Build a Strategic Partnership</h2>
-           
-            <div class="contact-info">
-                <h3 style="color: white; text-align: center; margin-bottom: 20px;">Get in Touch</h3>
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <strong>Address:</strong><br>
-                            68, Mayne Avenue, Calabar<br>
-                            Cross-River, Nigeria
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <strong>Email:</strong><br>
-                            info@gmtienergy.com
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🌐</div>
-                        <div>
-                            <strong>Website:</strong><br>
-                            www.gmtienergy.com
-                        </div>
-                    </div>
+            <h1>Contact Information</h1>
+            <div class="contact-grid">
+                <div class="contact-box">
+                    <h3 style="color: #d69e2e; margin-bottom: 25px; font-size: 1.5em; font-weight: 600;">Contact Details</h3>
                     <div class="contact-item">
                         <div class="contact-icon">📞</div>
                         <div>
-                            <strong>Phone:</strong><br>
-                            +234 802 921 2190<br>
-                            +234 802 382 8467<br>
-                            +234 806 525 3448
+                            <div>07033909822</div>
+                            <div>08152676953</div>
                         </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉</div>
+                        <div>Suleman.a@monaspetroleum.com</div>
+                    </div>
+                </div>
+                
+                <div class="contact-box">
+                    <h3 style="color: #d69e2e; margin-bottom: 25px; font-size: 1.5em; font-weight: 600;">Abuja Office</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>Suite 4, 1st Floor, 21, Blantyre Street, Wuse Zone 2, FCT-Abuja, Nigeria.</div>
+                    </div>
+                </div>
+                
+                <div class="contact-box">
+                    <h3 style="color: #d69e2e; margin-bottom: 25px; font-size: 1.5em; font-weight: 600;">Lagos Office</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>Flat 11, Jordan Apartment, Adeniyi Coker Street, Dideolu Estate, Off Akinbola Street, Victoria Island, Lagos State, Nigeria.</div>
                     </div>
                 </div>
             </div>
-           
-            <div class="cta-section">
-                <h3 style="margin-bottom: 15px;">Ready to Expand Your Distribution Network?</h3>
-                <p style="font-size: 1.1rem; margin-bottom: 20px;">Join forces with GMTI Energy Limited and leverage our proven expertise, established infrastructure, and committed leadership team to achieve your distribution goals across Nigeria's dynamic petroleum market.</p>
-                <button class="cta-button">Schedule a Partnership Discussion</button>
+            <div style="text-align: center; margin-top: 40px; font-size: 1.3em; color: #9b2c2c; font-weight: 500;">
+                "Where Wisdom Fuels Energy - Your Trusted Partner for Reliable Energy Solutions"
             </div>
         </div>
     </div>
+
+    <div class="navigation">
+        <button class="nav-btn" onclick="previousSlide()">← Previous</button>
+        <button class="nav-btn" onclick="nextSlide()">Next →</button>
+    </div>
+
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+            document.getElementById('currentSlide').textContent = index + 1;
+        }
+
+        function nextSlide() {
+            currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+            showSlide(currentSlideIndex);
+        }
+
+        function previousSlide() {
+            currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlideIndex);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowRight' || event.key === ' ') {
+                nextSlide();
+            } else if (event.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+
+        // Smooth loading animation
+        window.addEventListener('load', function() {
+            document.querySelector('.slide.active').style.opacity = '0';
+            setTimeout(() => {
+                document.querySelector('.slide.active').style.transition = 'opacity 0.5s ease';
+                document.querySelector('.slide.active').style.opacity = '1';
+            }, 100);
+        });
+    </script>
 </body>
 </html>
-	
